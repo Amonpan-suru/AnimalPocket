@@ -4,16 +4,43 @@ using UnityEngine;
 
 public class fish : PetStats
 {
-    protected float lefttime;
-    protected float hungryrate;
-    protected float happinessrate;
-    protected float cleanlinessrate;
-    protected float healrate;
+    new string name = "Tawan";
+    public new float lefttime = 0;
 
-    protected float hungrylavel;
-    public new float happinessLavel = 25;
-    protected float cleanLavel;
-    public new float heallavel = 50;
+    public new float hungryrate = 5;
+    public new float happinessrate = 2;
+    public new float cleanlinessrate = 2;
+    public new float healrate = 4;
+
+    public new float hungrylavel = 100;
+    public new float happinessLavel = 100;
+    public new float cleanLavel = 100;
+    public new float heallavel = 100;
+
+    private void FixedUpdate()
+    {
+        lefttime += Time.deltaTime;
+
+        if(lefttime >= 5)
+        {
+            hungrylavel -= hungryrate;
+            happinessLavel -= happinessrate;
+            cleanLavel -= cleanlinessrate;
+            heallavel -= healrate;
+
+            UpdateStats();
+
+            lefttime = 0;
+        }
+    }
+
+    void UpdateStats()
+    {
+        hungry(hungrylavel);
+        happiness(happinessLavel);
+        cleam(cleanLavel);
+        heal(heallavel);
+    }
 
 
     private void Update()
@@ -23,7 +50,7 @@ public class fish : PetStats
 
     private void Start()
     {
-        happiness(happinessLavel);
+        
     }
 
 }

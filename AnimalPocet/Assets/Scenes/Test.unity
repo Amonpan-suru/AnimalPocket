@@ -345,8 +345,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4e232e34cc5944d9e8306f64967ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  happinessLavel: 25
-  heallavel: 50
+  lefttime: 0
+  hungryrate: 5
+  happinessrate: 2
+  cleanlinessrate: 2
+  healrate: 4
+  hungrylavel: 100
+  happinessLavel: 100
+  cleanLavel: 100
+  heallavel: 100
 --- !u!1 &1509695792
 GameObject:
   m_ObjectHideFlags: 0

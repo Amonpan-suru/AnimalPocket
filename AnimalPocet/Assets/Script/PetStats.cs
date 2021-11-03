@@ -17,17 +17,17 @@ public class PetStats : MonoBehaviour
     protected float heallavel;
 
 
-    protected void hungry()
+    protected void hungry(float hp)
     {
-        if (hungrylavel <= 50)
+        if (hp <= 50)
         {
             Debug.Log("hungry"); 
         }
-        if (hungrylavel <= 25)
+        if (hp <= 25)
         {
             Debug.Log("Vary hungry");
         }
-        if (hungrylavel <= 0)
+        if (hp <= 0)
         {
             Debug.Log("Deadbyhungry");
         }
@@ -49,33 +49,33 @@ public class PetStats : MonoBehaviour
         }
     }
 
-    protected void cleam()
+    protected void cleam(float hp)
     {
-        if (cleanLavel <= 50)
+        if (hp <= 50)
         {
             Debug.Log("dirty");
         }
-        if (cleanLavel <= 25)
+        if (hp <= 25)
         {
             Debug.Log("Vary dirty");
         }
-        if (cleanLavel <= 0)
+        if (hp <= 0)
         {
             Debug.Log("Deadbydirty");
         }
     }
 
-    protected void heal()
+    protected void heal(float hp)
     {
-        if (heallavel <= 50)
+        if (hp <= 50)
         {
             Debug.Log("pain");
         }
-        if (heallavel <= 25)
+        if (hp <= 25)
         {
             Debug.Log("Vary pain");
         }
-        if (heallavel <= 0)
+        if (hp <= 0)
         {
             Debug.Log("Deadbypain");
         }
