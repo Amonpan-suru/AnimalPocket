@@ -5,7 +5,6 @@ using UnityEngine;
 public class fish : PetStats
 {
     new string name = "Tawan";
-    public new float lefttime = 0;
 
     public new float hungryrate = 5;
     public new float happinessrate = 2;
@@ -19,19 +18,26 @@ public class fish : PetStats
 
     private void FixedUpdate()
     {
-        lefttime += Time.deltaTime;
+        //lefttime += Time.deltaTime;
 
-        if(lefttime >= 5)
-        {
-            hungrylavel -= hungryrate;
-            happinessLavel -= happinessrate;
-            cleanLavel -= cleanlinessrate;
-            heallavel -= healrate;
+        hungrylavel -= (hungryrate) / 100000;
+        happinessLavel -= (happinessrate) / 100000;
+        cleanLavel -= (cleanlinessrate) / 100000;
+        heallavel -= (healrate) / 100000;
 
-            UpdateStats();
+        UpdateStats();
 
-            lefttime = 0;
-        }
+        //if(lefttime >= 5)
+        //{
+        //    hungrylavel -= hungryrate;
+        //    happinessLavel -= happinessrate;
+        //    cleanLavel -= cleanlinessrate;
+        //    heallavel -= healrate;
+
+        //    UpdateStats();
+
+        //    lefttime = 0;
+        //}
     }
 
     void UpdateStats()

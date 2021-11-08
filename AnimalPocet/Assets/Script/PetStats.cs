@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PetStats : MonoBehaviour
 {
-
-    protected float lefttime;
+    [SerializeField]
     protected float hungryrate;
     protected float happinessrate;
     protected float cleanlinessrate;
@@ -15,7 +14,7 @@ public class PetStats : MonoBehaviour
     protected float happinessLavel;
     protected float cleanLavel;
     protected float heallavel;
-
+    
 
     protected void hungry(float hp)
     {
