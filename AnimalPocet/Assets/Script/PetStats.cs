@@ -18,11 +18,11 @@ public class PetStats : MonoBehaviour
 
     protected void hungry(float hp)
     {
-        if (hp <= 50)
+        if (hp <= 50 && hp >= 26)
         {
             Debug.Log("hungry"); 
         }
-        if (hp <= 25)
+        if (hp <= 25 && hp >= 1)
         {
             Debug.Log("Vary hungry");
         }
@@ -50,11 +50,11 @@ public class PetStats : MonoBehaviour
 
     protected void cleam(float hp)
     {
-        if (hp <= 50)
+        if (hp <= 50 && hp >= 26)
         {
             Debug.Log("dirty");
         }
-        if (hp <= 25)
+        if (hp <= 25 && hp >= 1)
         {
             Debug.Log("Vary dirty");
         }
@@ -66,11 +66,11 @@ public class PetStats : MonoBehaviour
 
     protected void heal(float hp)
     {
-        if (hp <= 50)
+        if (hp <= 50 && hp >= 26)
         {
             Debug.Log("pain");
         }
-        if (hp <= 25)
+        if (hp <= 25 && hp >= 1)
         {
             Debug.Log("Vary pain");
         }
