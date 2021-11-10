@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class fish : PetStats
 {
-    new string name = "Tawan";
+    public new string name = "Tawan";
 
     public  float hungryrate_C = 5;
     public  float happinessrate_C = 2;

@@ -687,6 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hungryrate: 5
+  name: KK
   hungryrate_C: 5
   happinessrate_C: 2
   cleanlinessrate_C: 2
