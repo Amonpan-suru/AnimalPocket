@@ -1,0 +1,16 @@
+[
+    {
+        "id": 0,
+        "title": "Sword",
+        "value": 6,
+        "stats": {
+            "power": 1,
+            "defence": 4,
+            "vitality": 2
+        },
+        "description": "the test of box bitch",
+        "stackable": false,
+        "rarity": 2,
+        "slug": "Sword"
+    }
+]
