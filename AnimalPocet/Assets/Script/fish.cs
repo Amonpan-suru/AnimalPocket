@@ -7,6 +7,8 @@ public class fish : PetStats
 {
     public new string name = "Tawan";
 
+    FeedScript feed;
+
     public  float hungryrate_C = 5;
     public  float happinessrate_C = 2;
     public  float cleanlinessrate_C = 2;
@@ -22,7 +24,9 @@ public class fish : PetStats
     
 
     private void Start()
-    {      
+    {
+        feed = this.gameObject.GetComponent<FeedScript>();
+        feed.foodid(feedfoodforfish);
 
         if(PlayerPrefs.HasKey(name + "hungryrate"))
         {
@@ -114,5 +118,10 @@ public class fish : PetStats
         happinessLavel = PlayerPrefs.GetFloat(name + "happinessLavel");
         cleanLavel = PlayerPrefs.GetFloat(name + "cleanLavel");
         heallavel = PlayerPrefs.GetFloat(name + "heallavel");
+    }
+
+    void feedfoodforfish(float foodid)
+    {
+        hungrylavel += foodid;
     }
 }

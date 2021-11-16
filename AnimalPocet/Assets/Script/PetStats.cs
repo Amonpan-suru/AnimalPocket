@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PetStats : MonoBehaviour
 {
-    [SerializeField]
     protected float hungryrate;
     protected float happinessrate;
     protected float cleanlinessrate;
