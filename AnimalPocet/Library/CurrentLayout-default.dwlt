@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1792
     height: 963
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -68,6 +68,7 @@ MonoBehaviour:
     y: 0
     width: 363
     height: 913
+<<<<<<< HEAD
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -75,6 +76,12 @@ MonoBehaviour:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
+=======
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
+  vertical: 0
+  controlID: 17
+>>>>>>> parent of 29b80037 (BookUpdate)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -92,11 +99,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 354
     height: 552
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
+=======
+    width: 362
+    height: 913
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+>>>>>>> parent of 29b80037 (BookUpdate)
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -304,6 +319,12 @@ MonoBehaviour:
     width: 973
     height: 501
   m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
+=======
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 16026
+>>>>>>> parent of 29b80037 (BookUpdate)
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,9 +376,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 884d0000
     m_LastClickedID: 19848
     m_ExpandedIDs: 00000000884d000000ca9a3b
+=======
+    m_SelectedIDs: 14400000
+    m_LastClickedID: 16404
+    m_ExpandedIDs: 000000004a3f000000ca9a3b
+>>>>>>> parent of 29b80037 (BookUpdate)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -385,7 +412,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000884d0000
+=======
+    m_ExpandedIDs: 000000004a3f0000
+>>>>>>> parent of 29b80037 (BookUpdate)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +444,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_ExpandedInstanceIDs: c6230000a6420000ea40000076430000103f0000cc3d0000d23d0000023f0000
+>>>>>>> parent of 29b80037 (BookUpdate)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -508,7 +543,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: a6faffff
+=======
+      m_ExpandedIDs: c0deffffc2deffff8aeaffff8ceaffff52fbffff163d00003a3d0000683d0000c43d0000e43d00001c3e00004c3e0000743e0000
+>>>>>>> parent of 29b80037 (BookUpdate)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Fish_Animation (Missing Prefab)
@@ -568,9 +607,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 355.61646, y: 235.49982, z: 6.8616943}
     speed: 2
     m_Value: {x: 355.61646, y: 235.49982, z: 6.8616943}
+=======
+    m_Target: {x: 1061.515, y: 345.7046, z: -219.85046}
+    speed: 2
+    m_Value: {x: 1061.515, y: 345.7046, z: -219.85046}
+>>>>>>> parent of 29b80037 (BookUpdate)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -621,9 +666,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.05875173, y: 0.028442087, z: -0.0016745336, w: 0.997866}
   m_Size:
+<<<<<<< HEAD
     m_Target: 397.00412
     speed: 2
     m_Value: 364.50348
+=======
+    m_Target: 671.28357
+    speed: 2
+    m_Value: 671.28357
+>>>>>>> parent of 29b80037 (BookUpdate)
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -762,6 +813,40 @@ MonoBehaviour:
     width: 1366
     height: 308
   m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
+=======
+  m_SerializedViewNames:
+  - UnityEditor.GameView
+  m_SerializedViewValues:
+  - /Users/surubamark/Documents/GitHub/AnimalPocket/AnimalPocet/Library/PlayModeViewStates/9eedd7cac85e14597b5065dd7740adf6
+  m_PlayModeViewName: Device Simulator
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
+  m_TargetSize: {x: 1792, y: 828}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_MaximizeOnPlay: 0
+  m_UseMipMap: 0
+  m_SimulatorState:
+    controlPanelVisible: 0
+    controlPanelWidth: 0
+    controlPanelFoldoutKeys:
+    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
+    controlPanelFoldoutValues: 00
+    pluginNames:
+    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
+    pluginStates:
+    - '{}'
+    scale: 26
+    fitToScreenEnabled: 0
+    rotationDegree: 270
+    highlightSafeAreaEnabled: 0
+    friendlyName: Apple iPhone XR
+    networkReachability: 1
+    systemLanguage: 10
+>>>>>>> parent of 29b80037 (BookUpdate)
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 0
