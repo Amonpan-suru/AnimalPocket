@@ -10,6 +10,7 @@ public class InterfaceMenu : MonoBehaviour
     public GameObject foodSmall;
     public GameObject conGreen;
     public GameObject conYellow;
+    public GameObject fish;
 
     public int coutoffood = 0;
     public Text shrimpCount, smallfoodCount;
@@ -103,5 +104,15 @@ public class InterfaceMenu : MonoBehaviour
     {
         smallfoodCount.text = "" + coutoffood;
         shrimpCount.text = "" + coutoffood;
+    }
+
+    public void Play()
+    {
+        fish.GetComponent<BoxCollider>().enabled = true;
+    }
+
+    public void ClosePlay()
+    {
+        fish.GetComponent<BoxCollider>().enabled = false;
     }
 }
