@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FirstPage.unity
+    guid: 7b2de0e03bc604b0ab4f779bd9c13086
+  - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 6eeaa28819f87bb48a0b467142d0738d
+  - enabled: 1
+    path: Assets/Scenes/SelectAnimal.unity
+    guid: 81df3bcaab0de4c2487c00516ce495e0
+  - enabled: 1
+    path: Assets/Scenes/LivingRoom.unity
+    guid: 530c4ff076b5d5e4d8094e58f0105f96
+  - enabled: 1
+    path: Assets/Scenes/Fish.unity
+    guid: 6c392201b4af54af3981590433275bce
   m_configObjects: {}
