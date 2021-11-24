@@ -132,4 +132,11 @@ public class fish : PetStats
     {
         cleanLavel = cleanid;
     }
+
+    public void healc()
+    {
+        heallavel = 100;
+    }
+    
+
 }

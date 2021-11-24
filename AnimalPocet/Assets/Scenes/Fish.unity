@@ -1174,9 +1174,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1803454342}
-        m_TargetAssemblyTypeName: InterfaceMenu, Assembly-CSharp
-        m_MethodName: conGreenOpen
+      - m_Target: {fileID: 1915986197}
+        m_TargetAssemblyTypeName: fish, Assembly-CSharp
+        m_MethodName: healc
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7643,6 +7643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4e232e34cc5944d9e8306f64967ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialfish: {fileID: 919132148779011715}
   hungrylavel: 0
   happinessLavel: 0
   cleanLavel: 0
@@ -11523,7 +11524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.15250313, y: 0.08051633}
   m_AnchorMax: {x: 0.84725475, y: 0.9195936}
-  m_AnchoredPosition: {x: -0.5, y: -0.31977844}
+  m_AnchoredPosition: {x: -0.5, y: -0.31976318}
   m_SizeDelta: {x: 1115, y: 620}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4297868116858486525

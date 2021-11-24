@@ -25,4 +25,6 @@ public class CleanScript : MonoBehaviour
     {
         cleanID.Invoke(100);
     }
+
+    
 }

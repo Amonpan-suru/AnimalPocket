@@ -9,12 +9,19 @@ public class PetStats : MonoBehaviour
     protected float cleanlinessrate;
     protected float healrate;
 
+    [SerializeField] ChangMaterialfish materialfish;
+
     [SerializeField] protected float hungrylavel;
     [SerializeField] protected float happinessLavel;
     [SerializeField] protected float cleanLavel;
     [SerializeField] protected float heallavel;
 
     [SerializeField] GameObject dirty1, dirty2;
+
+    private void Start()
+    {
+        materialfish = FindObjectOfType<ChangMaterialfish>();
+    }
 
     protected void hungry(float hp)
     {
@@ -77,15 +84,20 @@ public class PetStats : MonoBehaviour
 
     protected void heal(float hp)
     {
+
+        if(hp > 50)
+        {
+            materialfish.state1();
+        }
         if (hp <= 50 && hp >= 26)
         {
-            Debug.Log("pain");
+            materialfish.state2();
         }
-        if (hp <= 25 && hp >= 1)
+        else if (hp <= 25 && hp >= 1)
         {
-            Debug.Log("Vary pain");
+            materialfish.state3();
         }
-        if (hp <= 0)
+        else if (hp <= 0)
         {
             Debug.Log("Deadbypain");
         }
