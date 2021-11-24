@@ -9,10 +9,10 @@ public class PetStats : MonoBehaviour
     protected float cleanlinessrate;
     protected float healrate;
 
-    protected float hungrylavel;
-    protected float happinessLavel;
-    protected float cleanLavel;
-    protected float heallavel;
+    [SerializeField] protected float hungrylavel;
+    [SerializeField] protected float happinessLavel;
+    [SerializeField] protected float cleanLavel;
+    [SerializeField] protected float heallavel;
     
 
     protected void hungry(float hp)

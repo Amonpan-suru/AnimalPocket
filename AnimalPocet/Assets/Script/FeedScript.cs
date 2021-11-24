@@ -9,13 +9,14 @@ public class FeedScript : MonoBehaviour
 
     TranferEven foodId = new TranferEven();
 
+    [SerializeField] Animator con;
     public void foodid(UnityAction<float> listener)
     {
         foodId.AddListener(listener);
     }
 
 
-    float itemfood1 = 20 , itmefood2 = 50;
+    float itemfood1 = 10 , itmefood2 = 20;
 
     [SerializeField]
     string namefish;
@@ -23,6 +24,7 @@ public class FeedScript : MonoBehaviour
     void Start()
     {
         fish = this.gameObject.GetComponent<fish>();
+        con = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,11 +36,14 @@ public class FeedScript : MonoBehaviour
     public void feedfood1()
     {
         foodId.Invoke(itemfood1);
+        con.SetTrigger("Eating");
+       
     }
 
     public void feedfood2()
     {
         foodId.Invoke(itmefood2);
+        con.SetTrigger("Eating");
     }
 
 

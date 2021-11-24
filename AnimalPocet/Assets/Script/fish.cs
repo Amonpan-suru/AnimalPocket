@@ -9,22 +9,23 @@ public class fish : PetStats
 
     FeedScript feed;
 
+    InterfaceMenu menu;
+
     public  float hungryrate_C = 5;
     public  float happinessrate_C = 2;
     public  float cleanlinessrate_C = 2;
     public  float healrate_C = 4;
 
-    public  float hungrylavel_C = 100;
-    public  float happinessLavel_C = 100;
-    public  float cleanLavel_C = 100;
-    public  float heallavel_C = 100;
+    float hungrylavel_C = 100;
+    float happinessLavel_C = 100;
+    float cleanLavel_C = 100;
+    float heallavel_C = 100;
 
-
-    public Text HU, HA, CL, HE,Name;
     
 
     private void Start()
     {
+        menu = FindObjectOfType<InterfaceMenu>();
         feed = this.gameObject.GetComponent<FeedScript>();
         feed.foodid(feedfoodforfish);
 
@@ -79,12 +80,6 @@ public class fish : PetStats
         happiness(happinessLavel);
         cleam(cleanLavel);
         heal(heallavel);
-
-        HU.text = "Hungry = " + hungrylavel;
-        HA.text = "Happiness = " + happinessLavel;
-        CL.text = "Clean = " + cleanLavel;
-        HE.text = "Heal = " + heallavel;
-        Name.text = "Name = " + name;
     }
 
 
@@ -122,6 +117,8 @@ public class fish : PetStats
 
     void feedfoodforfish(float foodid)
     {
-        hungrylavel += foodid;
+        hungrylavel += (foodid * menu.coutoffood);
+        menu.coutoffood = 0;
+        menu.UpdateText();
     }
 }
