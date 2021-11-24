@@ -9,6 +9,7 @@ public class fish : PetStats
 
     FeedScript feed;
     CleanScript clean;
+    
 
     InterfaceMenu menu;
 
@@ -31,6 +32,8 @@ public class fish : PetStats
         feed.foodid(feedfoodforfish);
         clean = this.gameObject.GetComponent<CleanScript>();
         clean.cleanid(cleanforfish);
+
+        
 
         if(PlayerPrefs.HasKey(name + "hungryrate"))
         {

@@ -37,6 +37,7 @@ public class PetStats : MonoBehaviour
         if (hp <= 50 && hp >= 26)
         {
             Debug.Log("sad");
+            
         }
         if (hp <= 25 && hp >= 1)
         {

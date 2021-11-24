@@ -18,7 +18,12 @@ ModelImporter:
   - first:
       74: 4651059274040666381
     second: Armature|Turning.R
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fish
+    second: {fileID: 2100000, guid: b13ea630b4ae4ae47a637dae2ffdbf33, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -245,7 +250,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
