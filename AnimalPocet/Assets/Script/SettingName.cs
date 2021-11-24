@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class SettingName : MonoBehaviour
 {
     public GameObject namePanel;
-    private InputField animalName;
+    public string newpetName = "";
 
 
     // Update is called once per frame
@@ -26,14 +26,22 @@ public class SettingName : MonoBehaviour
         namePanel.SetActive(false);
     }
 
-    public void SetName()
+    void Start()
     {
-        Debug.Log(animalName.text);
-        //PlayerPrefs.SetString("name", animalName.text);
-        //PlayerPrefs.Save();
-
+        var input = gameObject.GetComponent<InputField>();
+        var petName = new InputField.SubmitEvent();
+        petName.AddListener(SubmitName);
+        input.onEndEdit = petName;
         
-        //SceneManager.LoadScene("LivingRoom");
+    }
+
+    private void SubmitName(string getName)
+    {
+        PlayerPrefs.SetString("petName", getName);
+        PlayerPrefs.Save();
+
+        newpetName = PlayerPrefs.GetString("petName");
+        Debug.Log(newpetName);
     }
 
 

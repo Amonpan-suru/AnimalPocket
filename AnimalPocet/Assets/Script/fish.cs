@@ -128,6 +128,5 @@ public class fish : PetStats
         {
             happinessLavel += 5;
         }
-        
     }
 }

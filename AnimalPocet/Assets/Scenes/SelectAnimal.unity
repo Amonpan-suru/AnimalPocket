@@ -726,6 +726,7 @@ GameObject:
   - component: {fileID: 472065196}
   - component: {fileID: 472065195}
   - component: {fileID: 472065194}
+  - component: {fileID: 472065197}
   m_Layer: 5
   m_Name: InputField
   m_TagString: Untagged
@@ -857,6 +858,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472065192}
   m_CullTransparentMesh: 1
+--- !u!114 &472065197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472065192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d354376bd104880a1be82b187b92dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namePanel: {fileID: 1113659535}
+  newpetName: 
 --- !u!1 &641411007
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +992,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 760895970}
+      - m_Target: {fileID: 472065197}
         m_TargetAssemblyTypeName: SettingName, Assembly-CSharp
         m_MethodName: ClosePanel
         m_Mode: 1
@@ -998,7 +1013,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 760895971}
-  - component: {fileID: 760895970}
   m_Layer: 0
   m_Name: system control
   m_TagString: Untagged
@@ -1006,19 +1020,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &760895970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760895969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d354376bd104880a1be82b187b92dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  namePanel: {fileID: 472065192}
 --- !u!4 &760895971
 Transform:
   m_ObjectHideFlags: 0
@@ -1050,7 +1051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1113659536
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1866,7 +1867,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 760895970}
+      - m_Target: {fileID: 472065197}
         m_TargetAssemblyTypeName: SettingName, Assembly-CSharp
         m_MethodName: OpenNamePanel
         m_Mode: 1
@@ -2500,7 +2501,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 760895970}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingName, Assembly-CSharp
         m_MethodName: SetName
         m_Mode: 1
