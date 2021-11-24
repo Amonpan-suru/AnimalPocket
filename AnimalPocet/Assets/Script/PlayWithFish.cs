@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayWithFish : MonoBehaviour
 {
+    public GameObject loveParticle;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,7 @@ public class PlayWithFish : MonoBehaviour
 
     void OnMouseDown()
     {
+        Instantiate(loveParticle);
         Debug.Log("hit");
     }
 
