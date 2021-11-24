@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1792
     height: 963
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -72,8 +72,8 @@ MonoBehaviour:
     y: 30
     width: 1792
     height: 913
-  m_MinSize: {x: 708, y: 492}
-  m_MaxSize: {x: 18003, y: 14042}
+  m_MinSize: {x: 709, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
   controlID: 17
 --- !u!114 &4
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 362
     height: 913
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 16026
+  m_LastSelectedObjectID: 15986
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -397,9 +397,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 14400000
-    m_LastClickedID: 16404
-    m_ExpandedIDs: 000000004a3f000000ca9a3b
+    m_SelectedIDs: 46410000
+    m_LastClickedID: 16710
+    m_ExpandedIDs: 000000008640000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -427,7 +427,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a3f0000
+    m_ExpandedIDs: 0000000086400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -455,7 +455,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000a6420000ea40000076430000103f0000cc3d0000d23d0000023f0000
+    m_ExpandedInstanceIDs: c6230000a642000076430000103f0000cc3d0000d23d0000023f0000d23f00003840000040400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -550,7 +550,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c0deffffc2deffff8aeaffff8ceaffff52fbffff163d00003a3d0000683d0000c43d0000e43d00001c3e00004c3e0000743e0000
+      m_ExpandedIDs: fef4ffff52fbffff9a3d0000023e0000563e0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -610,9 +610,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1061.515, y: 345.7046, z: -219.85046}
+    m_Target: {x: 1024.3301, y: 392.20145, z: -232.11505}
     speed: 2
-    m_Value: {x: 1061.515, y: 345.7046, z: -219.85046}
+    m_Value: {x: 1024.3301, y: 392.20145, z: -232.11505}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -663,9 +663,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 671.28357
+    m_Target: 460.33792
     speed: 2
-    m_Value: 671.28357
+    m_Value: 460.33792
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -764,7 +764,7 @@ MonoBehaviour:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     pluginStates:
     - '{}'
-    scale: 26
+    scale: 40
     fitToScreenEnabled: 0
     rotationDegree: 270
     highlightSafeAreaEnabled: 0
