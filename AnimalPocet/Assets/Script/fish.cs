@@ -121,4 +121,13 @@ public class fish : PetStats
         menu.coutoffood = 0;
         menu.UpdateText();
     }
+
+    public void PlusHappiness()
+    {
+        if (happinessLavel <= 100)
+        {
+            happinessLavel += 5;
+        }
+        
+    }
 }
