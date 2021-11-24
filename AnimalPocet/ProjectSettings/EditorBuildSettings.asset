@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fish.unity
     guid: 6c392201b4af54af3981590433275bce
+  - enabled: 1
+    path: Assets/Scenes/SelectAnimal.unity
+    guid: 81df3bcaab0de4c2487c00516ce495e0
   m_configObjects: {}

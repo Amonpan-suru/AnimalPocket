@@ -104,4 +104,6 @@ public class InterfaceMenu : MonoBehaviour
         smallfoodCount.text = "" + coutoffood;
         shrimpCount.text = "" + coutoffood;
     }
+
+
 }

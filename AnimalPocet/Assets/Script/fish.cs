@@ -23,7 +23,11 @@ public class fish : PetStats
     float cleanLavel_C = 100;
     float heallavel_C = 100;
 
-    
+
+    private void Awake()
+    {
+        name = PlayerPrefs.GetString("petName");
+    }
 
     private void Start()
     {
@@ -32,8 +36,6 @@ public class fish : PetStats
         feed.foodid(feedfoodforfish);
         clean = this.gameObject.GetComponent<CleanScript>();
         clean.cleanid(cleanforfish);
-
-        
 
         if(PlayerPrefs.HasKey(name + "hungryrate"))
         {
@@ -137,6 +139,13 @@ public class fish : PetStats
     {
         heallavel = 100;
     }
-    
 
+    public void PlusHappiness()
+    {
+        if (happinessLavel <= 100)
+        {
+            happinessLavel += 5;
+        }
+    }
+     
 }
