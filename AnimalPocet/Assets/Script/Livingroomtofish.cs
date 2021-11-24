@@ -21,7 +21,7 @@ public class Livingroomtofish : MonoBehaviour, IPointerDownHandler
 
     public void loadTofish()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("fish");
         Debug.Log("sd");
     }
 
@@ -34,7 +34,7 @@ public class Livingroomtofish : MonoBehaviour, IPointerDownHandler
 
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("fish");
         Debug.Log("sd");
     }
 

@@ -27,6 +27,7 @@ public class fish : PetStats
     private void Awake()
     {
         name = PlayerPrefs.GetString("petName");
+
     }
 
     private void Start()
