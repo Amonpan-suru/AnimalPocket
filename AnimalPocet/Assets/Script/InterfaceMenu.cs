@@ -11,6 +11,9 @@ public class InterfaceMenu : MonoBehaviour
     public GameObject conGreen;
     public GameObject conYellow;
 
+    public int coutoffood = 0;
+    public Text shrimpCount, smallfoodCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,11 +66,13 @@ public class InterfaceMenu : MonoBehaviour
     public void giveShrimp()
     {
         foodShrimp.SetActive(false);
+        UpdateText();
     }
 
     public void giveSmall()
     {
         foodSmall.SetActive(false);
+        UpdateText();
     }
 
     public void ConGreen()
@@ -78,5 +83,25 @@ public class InterfaceMenu : MonoBehaviour
     public void ConYellow()
     {
         conYellow.SetActive(false);
+    }
+
+    public void plusFoodCount()
+    {
+        coutoffood += 1;
+        UpdateText(); 
+    }
+    public void MinusFoodCount()
+    {
+        if(coutoffood < 0)
+        {
+            coutoffood -= 1;
+        }
+        UpdateText();
+    }
+
+    public void UpdateText()
+    {
+        smallfoodCount.text = "" + coutoffood;
+        shrimpCount.text = "" + coutoffood;
     }
 }
