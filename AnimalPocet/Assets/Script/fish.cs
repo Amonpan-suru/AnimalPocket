@@ -8,6 +8,7 @@ public class fish : PetStats
     public new string name = "Tawan";
 
     FeedScript feed;
+    CleanScript clean;
 
     InterfaceMenu menu;
 
@@ -28,6 +29,8 @@ public class fish : PetStats
         menu = FindObjectOfType<InterfaceMenu>();
         feed = this.gameObject.GetComponent<FeedScript>();
         feed.foodid(feedfoodforfish);
+        clean = this.gameObject.GetComponent<CleanScript>();
+        clean.cleanid(cleanforfish);
 
         if(PlayerPrefs.HasKey(name + "hungryrate"))
         {
@@ -120,5 +123,10 @@ public class fish : PetStats
         hungrylavel += (foodid * menu.coutoffood);
         menu.coutoffood = 0;
         menu.UpdateText();
+    }
+
+    void cleanforfish(float cleanid)
+    {
+        cleanLavel = cleanid;
     }
 }

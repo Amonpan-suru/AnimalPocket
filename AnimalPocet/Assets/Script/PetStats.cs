@@ -13,7 +13,8 @@ public class PetStats : MonoBehaviour
     [SerializeField] protected float happinessLavel;
     [SerializeField] protected float cleanLavel;
     [SerializeField] protected float heallavel;
-    
+
+    [SerializeField] GameObject dirty1, dirty2;
 
     protected void hungry(float hp)
     {
@@ -49,18 +50,28 @@ public class PetStats : MonoBehaviour
 
     protected void cleam(float hp)
     {
-        if (hp <= 50 && hp >= 26)
+
+        if (hp > 50)
+        {
+            dirty1.SetActive(false);
+            dirty2.SetActive(false);
+        }
+        else if (hp <= 50 && hp >= 26)
         {
             Debug.Log("dirty");
+            dirty1.SetActive(true);
         }
-        if (hp <= 25 && hp >= 1)
+        else if (hp <= 25 && hp >= 1)
         {
             Debug.Log("Vary dirty");
+            dirty1.SetActive(false);
+            dirty2.SetActive(true);
         }
-        if (hp <= 0)
+        else if (hp <= 0)
         {
             Debug.Log("Deadbydirty");
         }
+
     }
 
     protected void heal(float hp)
